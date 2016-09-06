@@ -14,12 +14,12 @@ add_subdirectory(python)
 set(CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE 1)
 
 # include some directories
-find_package(Eigen REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 include_directories(${catkin_INCLUDE_DIRS}
                     include
 )
-include_directories(SYSTEM ${Eigen_INCLUDE_DIRS})
+include_directories(SYSTEM ${EIGEN3_INCLUDE_DIRS})
 
 add_subdirectory(src)
 
